@@ -229,7 +229,12 @@ class App extends Component {
             </p>
           </section>
           <section className="welcome">
-            <h3>Vítej na stránkách jejich společného sportovního snažení.</h3>
+            <blockquote className="quote">
+              <p>
+                If you don’t practice, you don’t deserve to win.
+              </p>
+              <footer>Andre Agassi</footer>
+            </blockquote>
           </section>
           <section className="players-section">
             <div className="players-title">
@@ -247,7 +252,7 @@ class App extends Component {
           </section>
           <section className="tabulka">
             <h1 id="tabulka" className="tabulka-heading">
-              ta tabulka <i class="fas fa-file-alt" />
+              ta tabulka <i className="fas fa-file-alt" />
             </h1>
 
             <p className="rekapitulace">

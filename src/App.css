@@ -65,17 +65,34 @@
 
 .welcome {
   background-color: #ddd;
-  padding: 15px;
+  padding-top: 5px;
 }
-.welcome h3 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #666;
-  text-align: center;
+.welcome .quote {
   font-size: 1.5rem;
-  text-transform: uppercase;
-  width: 70%;
-  margin: 1rem auto;
-  /* border: 1px solid #000; */
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.welcome .quote p {
+  color: #555;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  font-family: 'Gochi Hand', cursive;
+}
+.welcome .quote footer {
+  margin-top: .5rem;
+  padding: 0;
+  color: #777;
+  font-size: 1rem;
+  text-align: right;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
+.welcome .quote footer:before {
+  content: '— ';
 }
 
 /* ------------------- */
@@ -232,10 +249,19 @@
     align-self: stretch;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    /* margin: 4rem auto; */
   }
-  .welcome h3 {
-    font-size: 2rem;
+  .welcome .quote {
+    max-width: 80%;
   }
+  .welcome .quote p {
+    font-size: 3rem;
+  }
+
+  .welcome .quote footer {
+    font-size: 1.4rem;
+  }
+
   .players-section {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
