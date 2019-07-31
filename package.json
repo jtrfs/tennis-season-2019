@@ -2,7 +2,7 @@
   "name": "tennis-webpage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jtrfs.github.io/tennis-season-2019",
+  "homepage": "https://jtrfs.github.io/tennis-season-2019/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
