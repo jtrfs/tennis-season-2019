@@ -1,0 +1,17 @@
+.players-involved {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+/* ================================= */
+/*           MEDIA QUERIES           */
+/* ================================= */
+
+@media screen and (min-width: 650px) {
+  .players-involved {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+  }
+}

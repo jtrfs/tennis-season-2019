@@ -1,0 +1,88 @@
+.match-entry {
+  background-color: #222;
+}
+
+.accordion {
+  font-size: .9rem;
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+}
+
+.accordion::after {
+  content: '\027A4';
+  font-size: 20px;
+  color: #fff;
+  transform: rotate(-180deg);
+  float: right;
+  margin-left: 5px;
+  border-radius: 150px;
+  transition: .1s;
+}
+.accordion.active:after {
+  content: "\027A4";
+  transform: rotate(-270deg);
+  transition: .3s;
+}
+
+.panel {
+  border-bottom: 2px solid #444; 
+  display: none;
+  overflow: hidden;
+  transition: .3s;
+  text-align: right;
+  /* border: 3px solid blue; */
+}
+
+.panel p {
+  display: inline-block;
+  font-family: 'Oxygen Mono', monospace;
+  font-size: 2.5rem;
+  color: yellow;
+  padding: 0 10px;
+  margin: 20px 0;
+  /* border: 1px solid white; */
+}
+
+.panel p:last-of-type {
+  padding-right: 3rem;
+}
+
+.panel div {
+  /* border: 1px solid white; */
+  display: inline-block;
+  color: white;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.panel div:last-child {
+  display: none;
+}
+.panel div:last-of-type {
+  display: none;
+}
+
+.panel span {
+  display: block;
+  color: white;
+  background-color: #111;
+  padding: 15px 15px;
+  border-top: 1px solid #333;
+  font-style: italic;
+}
+
+/* ================================= */
+/*           MEDIA QUERIES           */
+/* ================================= */
+
+@media screen and (min-width: 650px) {
+  .accordion {
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: 1px solid #222;
+  }
+}
