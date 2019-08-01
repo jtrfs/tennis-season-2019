@@ -1,7 +1,6 @@
 .match-entry {
   background-color: #222;
 }
-
 .accordion {
   font-size: .9rem;
   text-align: left;
@@ -13,7 +12,6 @@
   padding: 10px;
   width: 100%;
 }
-
 .accordion::after {
   content: '\027A4';
   font-size: 20px;
@@ -29,7 +27,6 @@
   transform: rotate(-270deg);
   transition: .3s;
 }
-
 .panel {
   border-bottom: 2px solid #444; 
   display: none;
@@ -38,7 +35,6 @@
   text-align: right;
   /* border: 3px solid blue; */
 }
-
 .panel p {
   display: inline-block;
   font-family: 'Oxygen Mono', monospace;
@@ -48,11 +44,9 @@
   margin: 20px 0;
   /* border: 1px solid white; */
 }
-
 .panel p:last-of-type {
   padding-right: 1rem;
 }
-
 .panel div {
   /* border: 1px solid white; */
   display: inline-block;
@@ -63,7 +57,6 @@
 .panel div:last-of-type {
   display: none;
 }
-
 .panel span {
   display: block;
   color: white;
