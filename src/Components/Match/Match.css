@@ -19,7 +19,6 @@
   transform: rotate(-180deg);
   float: right;
   margin-left: 5px;
-  border-radius: 150px;
   transition: .1s;
 }
 .accordion.active:after {
