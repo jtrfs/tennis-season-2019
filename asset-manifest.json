@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tennis-season-2019/static/css/main.fad195e8.chunk.css",
+    "main.css": "/tennis-season-2019/static/css/main.905e402e.chunk.css",
     "main.js": "/tennis-season-2019/static/js/main.49ff447c.chunk.js",
     "main.js.map": "/tennis-season-2019/static/js/main.49ff447c.chunk.js.map",
     "runtime~main.js": "/tennis-season-2019/static/js/runtime~main.81ef1593.js",
@@ -8,8 +8,8 @@
     "static/js/2.65aa1cca.chunk.js": "/tennis-season-2019/static/js/2.65aa1cca.chunk.js",
     "static/js/2.65aa1cca.chunk.js.map": "/tennis-season-2019/static/js/2.65aa1cca.chunk.js.map",
     "index.html": "/tennis-season-2019/index.html",
-    "precache-manifest.993016c19df1376efd9dd35810346dc3.js": "/tennis-season-2019/precache-manifest.993016c19df1376efd9dd35810346dc3.js",
+    "precache-manifest.7d52a01909282aa724fe0d70a3dc5a52.js": "/tennis-season-2019/precache-manifest.7d52a01909282aa724fe0d70a3dc5a52.js",
     "service-worker.js": "/tennis-season-2019/service-worker.js",
-    "static/css/main.fad195e8.chunk.css.map": "/tennis-season-2019/static/css/main.fad195e8.chunk.css.map"
+    "static/css/main.905e402e.chunk.css.map": "/tennis-season-2019/static/css/main.905e402e.chunk.css.map"
   }
 }
