@@ -21,6 +21,7 @@
   color: red;
   position: relative;
   font-weight: 700;
+  display: none;
 }
 .intro .hvezdicka::after {
   content: 'spíš jednoho, než toho druhého';
@@ -244,6 +245,9 @@
     display: block;
     margin: 0;
     padding: 0;
+  }
+  .intro .hvezdicka {
+    display: inline;
   }
   .welcome {
     align-self: stretch;
