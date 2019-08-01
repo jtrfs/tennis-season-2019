@@ -91,5 +91,6 @@
 @media screen and (max-width: 650px) {
   .panel p {
     font-size: 2rem;
+    color: red;
   }
 }
