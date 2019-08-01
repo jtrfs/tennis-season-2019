@@ -42,7 +42,8 @@
 .panel p {
   display: inline-block;
   font-family: 'Oxygen Mono', monospace;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
+  font-size: 5vw;
   color: yellow;
   padding: 0 10px;
   margin: 20px 0;
@@ -50,19 +51,20 @@
 }
 
 .panel p:last-of-type {
-  padding-right: 1.2rem;
+  padding-right: 1rem;
 }
 
 .panel div {
   /* border: 1px solid white; */
   display: inline-block;
   color: white;
-  font-size: 3rem;
+  /* font-size: 1.8rem; */
+  font-size: 5vw;
   font-weight: 100;
 }
-.panel div:last-child {
+/* .panel div:last-child {
   display: none;
-}
+} */
 .panel div:last-of-type {
   display: none;
 }
@@ -87,18 +89,18 @@
     border: 1px solid #222;
   }
   .panel p {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
   .panel p:last-of-type {
     padding-right: 3rem;
   }
 }
 
-/* @media screen and (max-width: 650px) {
+@media screen and (min-width: 1200px) {
   .panel p {
-    font-size: 1.8rem;
+     font-size: 3rem;
   }
-  .panel p:last-of-type {
-    padding-right: 1.2rem;
+  .panel div {
+    font-size: 3rem;
   }
-} */
+}
