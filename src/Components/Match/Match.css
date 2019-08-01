@@ -6,12 +6,18 @@
   text-align: left;
   padding: 10px;
   width: 100%;
-  border-width: 0;
-  border-color: transparent;
   outline: none;
   cursor: pointer;
   padding: 10px;
   width: 100%;
+}
+/* .accordion:not(:last-of-type) {
+  border-bottom-width: 1px;
+  border-bottom-color: red;
+} */
+.accordion {
+  border-bottom-width: 1px;
+  border-bottom-color: #000;
 }
 .accordion::after {
   content: '\027A4';
