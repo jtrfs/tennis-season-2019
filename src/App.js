@@ -117,6 +117,13 @@ class App extends Component {
           matchScore: [[1, 6], [4, 6], [2, 2]],
           winner: 'Phil',
           notes: ''
+        },
+        {
+          id: 15,
+          matchDate: new Date('2019-08-02'),
+          matchScore: [[3, 6], [5, 7]],
+          winner: 'Phil',
+          notes: 'Johnny stále nemůže najít formu, jeho hra je svazaná, není schopen se uvolnit. Čeká stále na kvalitní úderovou techniku, ale třeba již příště. Zatím svoji hru staví na tvrdém podání, které ho  ale nespasí, a hodinách strávených na zdi. Phil hraje to svoje, když neví, tak to prostě zalobuje na zadni čáru, kde je Johnny ztracen.'
         }
       ]
     };

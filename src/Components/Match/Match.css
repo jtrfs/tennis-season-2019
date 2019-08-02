@@ -60,6 +60,7 @@
 .panel span {
   display: block;
   color: white;
+  text-align: left;
   background-color: #111;
   padding: 15px 15px;
   border-top: 1px solid #333;
