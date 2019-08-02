@@ -47,6 +47,16 @@ export const Match = props => {
     // prepina zobrazeni - block/none
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
+      if (winner === 'John') {
+        e.target.style.backgroundColor = '#dce9af';
+        e.target.style.color = '#000';
+      } else if (winner === 'Phil') {
+        e.target.style.backgroundColor = '#FFBCB8';
+        e.target.style.color = '#000';
+      } else {
+        e.target.style.backgroundColor = '#e6e6e6';
+        e.target.style.color = '#000';
+      }
     } else {
       panel.style.display = 'block';
       accordion.style.borderBottomLeftRadius = 0;
@@ -63,13 +73,13 @@ export const Match = props => {
   };
 
   const mouseIn = e => {
-    if (props.match.winner === 'John') {
+    if (winner === 'John') {
       e.target.style.backgroundColor = '#457821';
       e.target.style.color = '#fff';
-    } else if (props.match.winner === 'Phil') {
+    } else if (winner === 'Phil') {
       e.target.style.backgroundColor = '#8b0000';
       e.target.style.color = '#fff';
-    } else if (props.match.winner === '') {
+    } else {
       e.target.style.backgroundColor = '#8c8c8c';
       e.target.style.color = '#fff';
     }
