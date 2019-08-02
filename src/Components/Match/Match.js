@@ -34,6 +34,7 @@ export const Match = props => {
 
   const clickToShowHideScore = e => {
     // console.log(e.target.classList.toggle("active"));
+    const accordion = e.target;
     const panel = e.target.nextElementSibling;
     const children = panel.childNodes;
     const note = panel.childNodes[children.length - 1];
@@ -48,6 +49,8 @@ export const Match = props => {
       panel.style.display = 'none';
     } else {
       panel.style.display = 'block';
+      accordion.style.borderBottomLeftRadius = 0;
+      accordion.style.borderBottomRightRadius = 0;
     }
     // nezobrazi prazdnou poznamku
     if (note.textContent === '') {
@@ -95,7 +98,7 @@ export const Match = props => {
 
   return (
     <div className="match-entry">
-      <button
+      <div
         className="accordion"
         style={style}
         onClick={clickToShowHideScore}
@@ -104,7 +107,7 @@ export const Match = props => {
       >
         {matchDate} - {matchNumber}. zápas
         {winner !== '' ? ` vyhrává ${winner}` : ' končí remízou'}
-      </button>
+      </div>
       <div className="panel">
         {set}
         <span>{note}</span>

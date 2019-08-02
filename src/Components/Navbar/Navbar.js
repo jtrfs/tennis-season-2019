@@ -6,13 +6,13 @@ export const Navbar = props => {
   return (
     <div className="nav">
       <ul>
-        <li className="rezervace">
+      <li className="rezervace">
           <a
             href={props.milo}
             target="_blank"
             rel="noopener noreferrer"
           >
-            MILO
+          MILO
           </a>
         </li>
         <li className="rezervace">
