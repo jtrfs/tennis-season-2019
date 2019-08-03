@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dee259f1e036a8ff551de7353ca84913",
+    "revision": "57fc96a4e80da24b9483a5574f262a1e",
     "url": "/tennis-season-2019/index.html"
   },
   {
