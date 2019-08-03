@@ -44,7 +44,7 @@ export const Match = props => {
     console.log('panel :', panel);
     // prepina class active
     e.target.classList.toggle('active');
-    // prepina zobrazeni - block/none
+    // prepina zobrazeni - block/none, a vraci barvu pozadi
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
       if (winner === 'John') {
