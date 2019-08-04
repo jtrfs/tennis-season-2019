@@ -123,15 +123,25 @@ class App extends Component {
           matchDate: new Date('2019-08-02'),
           matchScore: [[3, 6], [5, 7]],
           winner: 'Phil',
-          notes: 'Johnny stále nemůže najít formu, jeho hra je svázaná, není schopen se uvolnit. Čeká stále na kvalitní úderovou techniku, ale třeba již příště. Zatím svoji hru staví na tvrdém podání, které ho  ale nespasí, a hodinách strávených na zdi. Phil hraje to svoje, když neví, tak to prostě zalobuje na zadni čáru, kde je Johnny ztracen.'
+          notes:
+            'Johnny stále nemůže najít formu, jeho hra je svázaná, není schopen se uvolnit. Čeká stále na kvalitní úderovou techniku, ale třeba již příště. Zatím svoji hru staví na tvrdém podání, které ho  ale nespasí, a hodinách strávených na zdi. Phil hraje to svoje, když neví, tak to prostě zalobuje na zadni čáru, kde je Johnny ztracen.'
         },
         {
           id: 16,
           matchDate: new Date('2019-08-03'),
           matchScore: [[2, 6], [2, 6]],
           winner: 'Phil',
-          notes: 'Dnes se Johnnymu opět nedařilo, i když se dařit mělo. Konečný stav zápasu neodpovídá vyrovnanosti a napínavosti průběhu utkání. Phil nastoupil s bolavou hlavou, ale vidina 10. bodu vzájemných zápasů mu dodala motivaci, jen motivaci, jelikož kvalitu nechali oba borci asi tam, odkud na kurt dorazili.'
-        }
+          notes:
+            'Dnes se Johnnymu opět nedařilo, i když se dařit mělo. Konečný stav zápasu neodpovídá vyrovnanosti a napínavosti průběhu utkání. Phil nastoupil s bolavou hlavou, ale vidina 10. bodu vzájemných zápasů mu dodala motivaci, jen motivaci, jelikož kvalitu nechali oba borci asi tam, odkud na kurt dorazili.'
+        },
+        {
+          id: 17,
+          matchDate: new Date('2019-08-04'),
+          matchScore: [[2, 6], [0, 6], [6, 3]],
+          winner: 'Phil',
+          notes:
+            'Tři zápasy v rychlém sledu tří dnů a výsledek pokaždé téměř shodný - Johnny opět prohrává a Filipovi roste náskok a hřebínek. Ale možná dojde konečně ke změně, jelikož si Johnny uvědomil, že nemůže hrát na body, musí hrát na techniku - co se učí, to musí umět prodat. Na kurt nepatří strach z chyb. Budeme-li parafrázovat velkého Andreho, tak jen ten, kdo trénuje, si zaslouží vyhrávat, a to je Johnny. Druhý set viděl právě avizovaný přerod v mentalitě Johnnyho, kdy se seznamoval s tímto novým přístupem, sice jasně prohrál, ale uvnitř věděl, že je to správná cesta. A to se potvrdilo ve třetím setu, kdy jasně dominoval. Bohužel s časových důvodů nebylo možné zápas dohrát, protože Phil spěchal na oběd do Lipníka. I tak se dá vyhrávat do tabulky.'
+        },
       ]
     };
   }
@@ -154,7 +164,7 @@ class App extends Component {
     const generalScore = matches.map((match, i) => {
       return match.matchScore;
     });
-    console.log(generalScore);
+    console.log('generalScore: ', generalScore);
 
     // array celkovych vysledku vsech zapasu
     const individualMatchScore = generalScore.map((score, i) => {
@@ -162,7 +172,7 @@ class App extends Component {
       let playerTwoScore = 0;
 
       const individualSetScore = score.map((s, i) => {
-        console.log(s, i + 1);
+        console.log('jednotlivy set zapasu: ', s, i + 1);
         // pokud vyhral P1, dat mu bod
         if (s[0] > s[1]) {
           playerOneScore++;
@@ -174,15 +184,20 @@ class App extends Component {
       });
       // zobrazeni do konzole
       console.log(
-        '---------------------',
+        '-----------',
+        'pocet setu:',
         score.length,
+        ' skore na sety:',
         individualSetScore[individualSetScore.length - 1]
       );
       // vraci to skore zapasu, remizu v setu ignoruje:
       return individualSetScore[individualSetScore.length - 1];
     });
 
-    console.log('The set score for all the matches: ', individualMatchScore);
+    console.log(
+      'individualMatchScore - jak dopadly sety: ',
+      individualMatchScore
+    );
 
     const mutualMatchScores = individualMatchScore.map(result => {
       let john = 0;
@@ -194,7 +209,7 @@ class App extends Component {
       }
       return [john, phil];
     });
-    console.log('mutualMatchScores: ', mutualMatchScores);
+    console.log('mutualMatchScores - jak dopadl zapas: ', mutualMatchScores);
 
     // vypocet poctu remiz
     const numOfDrawsArr = mutualMatchScores.filter(num => {
@@ -206,7 +221,9 @@ class App extends Component {
 
     // spravny tvar slova remiza s cislicemi:
     const WordDeclination =
-      numOfDraws > 4 ? 'remíz' : numOfDraws > 1 ? 'remízy' : 'remíza';
+      numOfDraws > 4 ? 'remíz' 
+      : numOfDraws > 1 ? 'remízy' 
+      : 'remíza';
 
     // vypocet skore vzajemnych zapasu
     const johnPoints = mutualMatchScores.reduce((acc, val) => {
@@ -244,9 +261,7 @@ class App extends Component {
           </section>
           <section className="welcome">
             <blockquote className="quote">
-              <p>
-                If you don’t practice, you don’t deserve to win.
-              </p>
+              <p>If you don’t practice, you don’t deserve to win.</p>
               <footer>Andre Agassi</footer>
             </blockquote>
           </section>
@@ -277,7 +292,10 @@ class App extends Component {
               </span>
               .
             </p>
-            <MatchesPlayed matches={matchesPlayed.reverse()} />
+            <MatchesPlayed
+              matches={matchesPlayed.reverse()}
+              setResults={individualMatchScore}
+            />
           </section>
         </main>
       </div>

@@ -7,7 +7,7 @@ export const PlayersInvolved = props => {
   return (
     <div className='players-involved'>
       {props.players.map(player => {
-        return <Player key={player.id} player={player} />;
+        return <Player key={player.id} player={player}/>;
       })}
     </div>
   );

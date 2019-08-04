@@ -10,9 +10,19 @@ export const Match = props => {
   };
   const matchDate = props.match.matchDate.toLocaleDateString('en-GB', options);
   const match = props.match.matchScore;
+  // console.log("match in Match.js", match);
   const matchNumber = props.match.id;
+  console.log('matchNumber', matchNumber);
   const note = props.match.notes;
   const winner = props.match.winner;
+
+  // pro zobrazeni vysledku v accordionu
+  const vysledkyZapasu = props.vysledkyZapasu;
+  const bodyJohn = vysledkyZapasu[matchNumber - 1][0];
+  const bodyPhil = vysledkyZapasu[matchNumber - 1][1];
+  const vyhraJohn = `${bodyJohn}:${bodyPhil}`;
+  const vyhraPhil = `${bodyPhil}:${bodyJohn}`;
+
   // style podle hrace
   const style =
     winner === 'John'
@@ -106,6 +116,17 @@ export const Match = props => {
     }
   };
 
+  // const whoWon = () => {
+  //   if (winner === 'John') {
+  //     return (
+  //       <div>
+  //         <span>` vyhrává ${winner}`</span>
+  //         <span className="result">`${vyhraJohn}`</span>
+  //       </div>
+  //     );
+  //   }
+  // };
+
   return (
     <div className="match-entry">
       <div
@@ -116,11 +137,28 @@ export const Match = props => {
         onMouseEnter={mouseIn}
       >
         {matchDate} - {matchNumber}. zápas
-        {winner !== '' ? ` vyhrává ${winner}` : ' končí remízou'}
+        <span className="winningSide">
+          {winner === 'John' ? (
+            <span>
+              <span>{` vyhrává ${winner}`}</span>{' '}
+              <span className="result">{`${vyhraJohn}`}</span>
+            </span>
+          ) : winner === 'Phil' ? (
+            <span>
+              <span>{` vyhrává ${winner}`}</span>{' '}
+              <span className="result">{`${vyhraPhil}`}</span>
+            </span>
+          ) : (
+            <span>
+              <span>{` končí remízou`}</span>{' '}
+              <span className="result">{`${vyhraJohn}`}</span>
+            </span>
+          )}
+        </span>
       </div>
       <div className="panel">
         {set}
-        <span>{note}</span>
+        <span className="note">{note}</span>
       </div>
     </div>
   );

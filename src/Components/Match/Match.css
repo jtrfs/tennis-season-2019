@@ -2,6 +2,7 @@
   background-color: #222;
 }
 .accordion {
+  font-family: Oswald;
   font-size: .9rem;
   text-align: left;
   padding: 10px;
@@ -25,6 +26,12 @@
   transform: rotate(-270deg);
   transition: .3s;
 }
+
+.accordion .result {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 .panel {
   /* border-bottom: 2px solid #444;  */
   display: none;
@@ -56,7 +63,7 @@
 .panel div:last-of-type {
   display: none;
 }
-.panel span {
+.panel .note {
   display: block;
   color: white;
   text-align: left;
@@ -80,15 +87,18 @@
     border-radius: 4px;
     border: 1px solid #222;
   }
+  .accordion .result {
+    font-size: 1.3rem;
+  }
   .panel p:last-of-type {
     padding-right: 2rem;
   }
   .panel p {
     font-size: 2.6rem;
- }
- .panel div {
-   font-size: 2.6rem;
- }
+  }
+  .panel div {
+    font-size: 2.6rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
