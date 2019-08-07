@@ -1,5 +1,7 @@
 .match-entry {
   background-color: #222;
+
+  border: 2px solid blue;
 }
 .accordion {
   font-family: Oswald;
@@ -11,6 +13,8 @@
   border: 0;
   cursor: pointer;
   padding: 10px;
+  
+  /* border: 2px dotted green; */
 }
 .accordion::after {
   content: '\027A4';
@@ -30,6 +34,10 @@
 .accordion .result {
   font-weight: bold;
   font-size: 1rem;
+}
+
+.accordion .winning-side {
+  border: 2px dotted red;
 }
 
 .panel {

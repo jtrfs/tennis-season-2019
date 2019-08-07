@@ -12,7 +12,7 @@ export const Match = props => {
   const match = props.match.matchScore;
   // console.log("match in Match.js", match);
   const matchNumber = props.match.id;
-  console.log('matchNumber', matchNumber);
+  // console.log('matchNumber', matchNumber);
   const note = props.match.notes;
   const winner = props.match.winner;
 
@@ -43,6 +43,7 @@ export const Match = props => {
   });
 
   const clickToShowHideScore = e => {
+    e.stopPropagation();
     // console.log(e.target.classList.toggle("active"));
     const accordion = e.target;
     const panel = e.target.nextElementSibling;
@@ -116,17 +117,6 @@ export const Match = props => {
     }
   };
 
-  // const whoWon = () => {
-  //   if (winner === 'John') {
-  //     return (
-  //       <div>
-  //         <span>` vyhrává ${winner}`</span>
-  //         <span className="result">`${vyhraJohn}`</span>
-  //       </div>
-  //     );
-  //   }
-  // };
-
   return (
     <div className="match-entry">
       <div
@@ -137,7 +127,7 @@ export const Match = props => {
         onMouseEnter={mouseIn}
       >
         {matchDate} - {matchNumber}. zápas
-        <span className="winningSide">
+        <span className="winning-side">
           {winner === 'John' ? (
             <span>
               <span>{` vyhrává ${winner}`}</span>{' '}

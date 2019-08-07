@@ -142,6 +142,14 @@ class App extends Component {
           notes:
             'Tři zápasy v rychlém sledu tří dnů a výsledek pokaždé téměř shodný - Johnny opět prohrává a Filipovi roste náskok a hřebínek. Ale možná dojde konečně ke změně, jelikož si Johnny uvědomil, že nemůže hrát na body, musí hrát na techniku - co se učí, to musí umět prodat. Na kurt nepatří strach z chyb. Budeme-li parafrázovat velkého Andreho, tak jen ten, kdo trénuje, si zaslouží vyhrávat, a to je Johnny. Druhý set viděl právě avizovaný přerod v mentalitě Johnnyho, kdy se seznamoval s tímto novým přístupem, sice jasně prohrál, ale uvnitř věděl, že je to správná cesta. A to se potvrdilo ve třetím setu, kdy jasně dominoval. Bohužel s časových důvodů nebylo možné zápas dohrát, protože Phil spěchal na oběd do Lipníka. I tak se dá vyhrávat do tabulky.'
         },
+        {
+          id: 18,
+          matchDate: new Date('2019-08-07'),
+          matchScore: [[0, 6], [4, 6], [3, 1]],
+          winner: 'Phil',
+          notes:
+            'No nic, už se začnu asi připravovat na další sezónu, tato mi nevyšla. První set mi klasicky utekl, ani nevím jak. Snadno. A v druhém to už už vypadalo, že bych mohl prorazit, ale zase nic. Koncovka se ukázala být slabší. V každém případě mě zase psychicky dostávaly Philovi returny, které směřovaly do oblak a pak se snesly k zadní čáře. Humus. Ale je to účinné a má to výsledky, by si jeden mohl říct. Johnny si to ale neříká, Johnny zuří ... Příště musím zvítězit já.'
+        },
       ]
     };
   }
@@ -164,7 +172,7 @@ class App extends Component {
     const generalScore = matches.map((match, i) => {
       return match.matchScore;
     });
-    console.log('generalScore: ', generalScore);
+    // console.log('generalScore: ', generalScore);
 
     // array celkovych vysledku vsech zapasu
     const individualMatchScore = generalScore.map((score, i) => {
@@ -172,7 +180,7 @@ class App extends Component {
       let playerTwoScore = 0;
 
       const individualSetScore = score.map((s, i) => {
-        console.log('jednotlivy set zapasu: ', s, i + 1);
+        // console.log('jednotlivy set zapasu: ', s, i + 1);
         // pokud vyhral P1, dat mu bod
         if (s[0] > s[1]) {
           playerOneScore++;
@@ -183,21 +191,21 @@ class App extends Component {
         return [playerOneScore, playerTwoScore];
       });
       // zobrazeni do konzole
-      console.log(
-        '-----------',
-        'pocet setu:',
-        score.length,
-        ' skore na sety:',
-        individualSetScore[individualSetScore.length - 1]
-      );
+      // console.log(
+      //   '-----------',
+      //   'pocet setu:',
+      //   score.length,
+      //   ' skore na sety:',
+      //   individualSetScore[individualSetScore.length - 1]
+      // );
       // vraci to skore zapasu, remizu v setu ignoruje:
       return individualSetScore[individualSetScore.length - 1];
     });
 
-    console.log(
-      'individualMatchScore - jak dopadly sety: ',
-      individualMatchScore
-    );
+    // console.log(
+    //   'individualMatchScore - jak dopadly sety: ',
+    //   individualMatchScore
+    // );
 
     const mutualMatchScores = individualMatchScore.map(result => {
       let john = 0;
@@ -209,7 +217,7 @@ class App extends Component {
       }
       return [john, phil];
     });
-    console.log('mutualMatchScores - jak dopadl zapas: ', mutualMatchScores);
+    // console.log('mutualMatchScores - jak dopadl zapas: ', mutualMatchScores);
 
     // vypocet poctu remiz
     const numOfDrawsArr = mutualMatchScores.filter(num => {
@@ -217,7 +225,7 @@ class App extends Component {
       return draws;
     });
     const numOfDraws = numOfDrawsArr.length;
-    console.log('pocet remiz: ', numOfDrawsArr);
+    // console.log('pocet remiz: ', numOfDrawsArr);
 
     // spravny tvar slova remiza s cislicemi:
     const WordDeclination =
@@ -233,7 +241,7 @@ class App extends Component {
       return acc + val[1];
     }, 0);
     const headToHead = [johnPoints, philPoints];
-    console.log(headToHead);
+    // console.log(headToHead);
 
     return (
       <div className="App">

@@ -5,7 +5,7 @@ import './MatchesPlayed.css';
 
 export const MatchesPlayed = props => {
   const vysledkyZapasu = props.setResults;
-  console.log('matchSetResults in MatchesPlayed.js: ', vysledkyZapasu);
+  // console.log('matchSetResults in MatchesPlayed.js: ', vysledkyZapasu);
 
   return (
     <div className="matches">
