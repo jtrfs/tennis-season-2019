@@ -1,7 +1,7 @@
 .match-entry {
   background-color: #222;
 
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .accordion {
   font-family: Oswald;
@@ -37,7 +37,7 @@
 }
 
 .accordion .winning-side {
-  border: 2px dotted red;
+  /* border: 2px dotted red; */
 }
 
 .panel {

@@ -150,6 +150,14 @@ class App extends Component {
           notes:
             'No nic, už se začnu asi připravovat na další sezónu, tato mi nevyšla. První set mi klasicky utekl, ani nevím jak. Snadno. A v druhém to už už vypadalo, že bych mohl prorazit, ale zase nic. Koncovka se ukázala být slabší. V každém případě mě zase psychicky dostávaly Philovi returny, které směřovaly do oblak a pak se snesly k zadní čáře. Humus. Ale je to účinné a má to výsledky, by si jeden mohl říct. Johnny si to ale neříká, Johnny zuří ... Příště musím zvítězit já.'
         },
+        {
+          id: 19,
+          matchDate: new Date('2019-08-10'),
+          matchScore: [[4, 6], [7, 6]],
+          winner: '',
+          notes:
+            'A je to tady! Čísla mluví jasnou řečí, evidentně dochází k obratu. Dnešní remíza je předzvěstí Johnnyho dominance. Pokud zítra neztrati Phil odvahu, tak se ukáže, jestli tomu tak je. Je velká škoda, že se Johnnymu nepodařilo udržet v prvním setu stav v jeho prospěch. Hrál trpělivě a nespoléhal se na svoje první podání, ale s chladnou hlavou zkoušel jen druhé podání. Jako zázrakem utekl Phil hrobníkovi z lopaty. Druhý, a bohudík pro Phila poslední set zápasu, byl plný zvratů a napětí. V jednu chvíli měl Johnny pocit, že Phil hrál nad sítí na jeho hřišti a porušil tak pravidla - nakonec to skousnul a bojoval dál. Na konci "tajbrejkové" bitvy se začal Phil po prohraném míči rozčilovat, že ho Johnny nesportovně rozhodil výkřikem, ale všichni, kteří tomu rozumí vědí, že to patří ke hře - tudíž se Phil musí příště snažit víc a neměl by hledat příčiny neúspěchu tam, kde rozhodně nejsou. Jak říká velký Andre, ten, kdo netrénuje, si nezaslouží vyhrát.'
+        },
       ]
     };
   }
