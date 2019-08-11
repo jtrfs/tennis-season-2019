@@ -158,6 +158,14 @@ class App extends Component {
           notes:
             'A je to tady! Čísla mluví jasnou řečí, evidentně dochází k obratu. Dnešní remíza je předzvěstí Johnnyho dominance. Pokud zítra neztrati Phil odvahu, tak se ukáže, jestli tomu tak je. Je velká škoda, že se Johnnymu nepodařilo udržet v prvním setu stav v jeho prospěch. Hrál trpělivě a nespoléhal se na svoje první podání, ale s chladnou hlavou zkoušel jen druhé podání. Jako zázrakem utekl Phil hrobníkovi z lopaty. Druhý, a bohudík pro Phila poslední set zápasu, byl plný zvratů a napětí. V jednu chvíli měl Johnny pocit, že Phil hrál nad sítí na jeho hřišti a porušil tak pravidla - nakonec to skousnul a bojoval dál. Na konci "tajbrejkové" bitvy se začal Phil po prohraném míči rozčilovat, že ho Johnny nesportovně rozhodil výkřikem, ale všichni, kteří tomu rozumí vědí, že to patří ke hře - tudíž se Phil musí příště snažit víc a neměl by hledat příčiny neúspěchu tam, kde rozhodně nejsou. Jak říká velký Andre, ten, kdo netrénuje, si nezaslouží vyhrát.'
         },
+        {
+          id: 20,
+          matchDate: new Date('2019-08-11'),
+          matchScore: [[3, 6], [5, 7]],
+          winner: 'Phil',
+          notes:
+            'Ti, kteří dnes dorazili a sledovali tenisovou bitvu olomouckých tenisových gigantů, se nestačili divit. Už v prvním setu to vypadalo, že Johnny bude mít navrch - vždyť už vedl 2:0 a Phil si přestával věřit. Kupodivu to nevyšlo a druhý set přinesl jestě větší zvraty v utkání. Byli jsme světky i několika okamžiků, kdy se oba borci předvedli v dobrém světle. Popravdě jich bylo opravdu jen několik. Vrcholem ale bylo, když už Johnny téměř zvedal ruce vítězně nad hlavu za stavu 5:3 a 40:0 při jeho drtívém podání a Phil jako onen bájný Phoenix vstal z popela a dokázal nakonec vyhrát i v druhém setu 7:5. Zmar, zmar  a ještě jednou zmar! Začínám si myslet, že velký Andre byl tak akorát velký ňouma a lhář. Ale i tak si myslím, že se to blíží ...'
+        },
       ]
     };
   }
@@ -279,6 +287,10 @@ class App extends Component {
             <blockquote className="quote">
               <p>If you don’t practice, you don’t deserve to win.</p>
               <footer>Andre Agassi</footer>
+            </blockquote>
+            <blockquote className="quote">
+              <p>And if you practice, it doesn't mean you must win.</p>
+              <footer>Johnny</footer>
             </blockquote>
           </section>
           <section className="players-section">
