@@ -166,6 +166,14 @@ class App extends Component {
           notes:
             'Ti, kteří dnes dorazili a sledovali tenisovou bitvu olomouckých tenisových gigantů, se nestačili divit. Už v prvním setu to vypadalo, že Johnny bude mít navrch - vždyť už vedl 2:0 a Phil si přestával věřit. Kupodivu to nevyšlo a druhý set přinesl jestě větší zvraty v utkání. Byli jsme světky i několika okamžiků, kdy se oba borci předvedli v dobrém světle. Popravdě jich bylo opravdu jen několik. Vrcholem ale bylo, když už Johnny téměř zvedal ruce vítězně nad hlavu za stavu 5:3 a 40:0 při jeho drtívém podání a Phil jako onen bájný Phoenix vstal z popela a dokázal nakonec vyhrát i v druhém setu 7:5. Zmar, zmar  a ještě jednou zmar! Začínám si myslet, že velký Andre byl tak akorát velký ňouma a lhář. Ale i tak si myslím, že se to blíží ...'
         },
+        {
+          id: 21,
+          matchDate: new Date('2019-08-14'),
+          matchScore: [[3, 6], [0, 6], [5, 7]],
+          winner: 'Phil',
+          notes:
+            'Vážení přátelé, já prostě už nemám slov ... to, co se děje na hřišti by nikdo neměl vidět; tak tam prosím nechoďte. Tenis je mi tuto sezónu sportem zakletým a prsty v tom má jistě kouzelník Phil, který svými zaklínadly (rozuměj průpovídkami) typu: "Tak vypadá tenis ..." (povedl se mu úder), "Promiň ..." (taky se mu povedl úder), "Tam nic není." (pro změnu se povedl úder mně) zcela evidentně ovlivňuje průběh celé hry. Jinak to není možné. A to nemluvím o typech úderů, které Philius požívá/zneužívá: pověstný lobing a toping (v mojí hantýrce). Stav zápasu tomu pak odpovídá. Tři prohrané sety. První mi utekl, druhý byl tragédie a ve třetím jsem vedl 5:3 a skončil na lopatě, zase tragédie. Trenéra už nechci tuto sezónu vidět.'
+        },
       ]
     };
   }
@@ -287,10 +295,6 @@ class App extends Component {
             <blockquote className="quote">
               <p>If you don’t practice, you don’t deserve to win.</p>
               <footer>Andre Agassi</footer>
-            </blockquote>
-            <blockquote className="quote">
-              <p>And if you practice, it doesn't mean you must win.</p>
-              <footer>Johnny</footer>
             </blockquote>
           </section>
           <section className="players-section">
