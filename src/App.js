@@ -180,7 +180,7 @@ class App extends Component {
           matchScore: [[3, 6], [3, 6], [3, 1]],
           winner: "Phil",
           notes:
-            "Povětrnostní podmínky, které dnes vládly na hřišti byly ideální. Teplota veskrze příjemná a sluníčko v dobré náladě. Vzhledem k tomu, že léto již odchází, tak na kurtu již nepanovala unavující vedra a pot se netvořil v hektolitrech. Johnnyho pověstné potítko zůstalo téměř suché, stejně tak jako trenýrky, které mnohdy přípomínaly plavky skokana do vody, který zrovna vylezl z bazénu. Phil byl v dobré náládě a porážka by mu tentokrát ani moc nevadila, protože dnes ráno zažil opět něco moc krásného, něco, o čem gentleman Johnny mluvit takhle veřejně rozhodně nemůže a nebude. No a o zbytku tohoto krásného skoro dopoledne snad nemá cenu ani mluvit ..."
+            "Povětrnostní podmínky, které dnes vládly na hřišti byly ideální. Teplota veskrze příjemná a sluníčko v dobré náladě. Vzhledem k tomu, že léto již odchází, tak na kurtu již nepanovala unavující vedra a pot se netvořil v hektolitrech. Johnnyho pověstné potítko zůstalo téměř suché, stejně tak jako trenýrky, které mnohdy přípomínaly plavky skokana do vody, který zrovna vylezl z bazénu. Phil byl v dobré náladě a porážka by mu tentokrát ani moc nevadila, protože dnes ráno zažil opět něco moc krásného, něco, o čem gentleman Johnny mluvit takhle veřejně rozhodně nemůže a nebude. No a o zbytku tohoto krásného skoro dopoledne snad nemá cenu ani mluvit ..."
         },
         {
           id: 23,
