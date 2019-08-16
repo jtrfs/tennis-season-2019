@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tennis-season-2019/precache-manifest.707888b144a88af54798b3a7ffc354d2.js"
+  "/tennis-season-2019/precache-manifest.df8bdc46e0b893e96e1cef154aad3bbe.js"
 );
 
 self.addEventListener('message', (event) => {
