@@ -187,7 +187,7 @@ class App extends Component {
           id: 23,
           matchDate: new Date("2019-08-17"),
           courtAndTime: "kurt K3 v 9:30",
-          matchScore: [[0, 0], [0, 0], [0, 0]],
+          matchScore: [[0, 0]],
           winner: "to be decided",
           notes: "Johnny is the favourite, as always ..."
         }

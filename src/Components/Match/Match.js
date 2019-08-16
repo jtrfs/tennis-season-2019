@@ -85,6 +85,10 @@ export const Match = props => {
     if (note.textContent === "") {
       note.style.display = "none";
     }
+    // nezobrazi vysledek u planovaneho zapasu
+    if (winner === "to be decided") {
+      panel.children[0].style.color = "#222";
+    }
     console.log(
       "obsahuje class active? ",
       e.target.classList.contains("active")
