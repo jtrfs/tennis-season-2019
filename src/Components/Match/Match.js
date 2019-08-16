@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './Match.css';
+import "./Match.css";
 
 export const Match = props => {
   const options = {
-    weekday: 'short',
-    month: 'short',
-    day: 'numeric'
+    weekday: "short",
+    month: "short",
+    day: "numeric"
   };
-  const matchDate = props.match.matchDate.toLocaleDateString('en-GB', options);
+  const matchDate = props.match.matchDate.toLocaleDateString("en-GB", options);
   const match = props.match.matchScore;
   // console.log("match in Match.js", match);
   const matchNumber = props.match.id;
@@ -23,13 +23,18 @@ export const Match = props => {
   const vyhraJohn = `${bodyJohn}:${bodyPhil}`;
   const vyhraPhil = `${bodyPhil}:${bodyJohn}`;
 
-  // style podle hrace
+  // zobrazeni mista a casu planovaneho zapasu
+  const courtAndTime = props.match.courtAndTime;
+
+  // vybarveni accordionu podle hrace
   const style =
-    winner === 'John'
-      ? { backgroundColor: '#dce9af', color: '#000' }
-      : winner === 'Phil'
-      ? { backgroundColor: '#FFBCB8', color: '#000' }
-      : { backgroundColor: '#e6e6e6', color: '#000' };
+    winner === "John"
+      ? { backgroundColor: "#dce9af", color: "#000" }
+      : winner === "Phil"
+      ? { backgroundColor: "#FFBCB8", color: "#000" }
+      : winner === "to be decided"
+      ? { backgroundColor: "#347B98", color: "rgba(255, 217, 0, 0.9)" }
+      : { backgroundColor: "#e6e6e6", color: "#000" };
 
   const set = match.map((set, i) => {
     return (
@@ -50,70 +55,76 @@ export const Match = props => {
     const children = panel.childNodes;
     const note = panel.childNodes[children.length - 1];
     const target = e.target;
-    console.log('target je :', target);
-    console.log('note :', note);
-    console.log('panel :', panel);
+    console.log("target je :", target);
+    console.log("note :", note);
+    console.log("panel :", panel);
     // prepina class active
-    e.target.classList.toggle('active');
+    e.target.classList.toggle("active");
     // prepina zobrazeni - block/none, a vraci barvu pozadi
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none';
-      if (winner === 'John') {
-        e.target.style.backgroundColor = '#dce9af';
-        e.target.style.color = '#000';
-      } else if (winner === 'Phil') {
-        e.target.style.backgroundColor = '#FFBCB8';
-        e.target.style.color = '#000';
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      if (winner === "John") {
+        e.target.style.backgroundColor = "#dce9af";
+        e.target.style.color = "#000";
+      } else if (winner === "Phil") {
+        e.target.style.backgroundColor = "#FFBCB8";
+        e.target.style.color = "#000";
+      } else if (winner === "to be decided") {
+        e.target.style.backgroundColor = "#347B98";
+        e.target.style.color = "rgba(255, 217, 0, 0.9)";
       } else {
-        e.target.style.backgroundColor = '#e6e6e6';
-        e.target.style.color = '#000';
+        e.target.style.backgroundColor = "#e6e6e6";
+        e.target.style.color = "#000";
       }
     } else {
-      panel.style.display = 'block';
+      panel.style.display = "block";
       accordion.style.borderBottomLeftRadius = 0;
       accordion.style.borderBottomRightRadius = 0;
     }
     // nezobrazi prazdnou poznamku
-    if (note.textContent === '') {
-      note.style.display = 'none';
+    if (note.textContent === "") {
+      note.style.display = "none";
     }
     console.log(
-      'obsahuje class active? ',
-      e.target.classList.contains('active')
+      "obsahuje class active? ",
+      e.target.classList.contains("active")
     );
   };
 
   const mouseIn = e => {
-    if (winner === 'John') {
-      e.target.style.backgroundColor = '#457821';
-      e.target.style.color = '#fff';
-    } else if (winner === 'Phil') {
-      e.target.style.backgroundColor = '#8b0000';
-      e.target.style.color = '#fff';
+    if (winner === "John") {
+      e.target.style.backgroundColor = "#457821";
+      e.target.style.color = "#fff";
+    } else if (winner === "Phil") {
+      e.target.style.backgroundColor = "#8b0000";
+      e.target.style.color = "#fff";
+    } else if (winner === "to be decided") {
+      e.target.style.backgroundColor = "#347B98";
+      e.target.style.color = "rgba(255, 217, 0, 0.9)";
     } else {
-      e.target.style.backgroundColor = '#8c8c8c';
-      e.target.style.color = '#fff';
+      e.target.style.backgroundColor = "#8c8c8c";
+      e.target.style.color = "#fff";
     }
   };
   const mouseOut = e => {
     if (
-      props.match.winner === 'John' &&
-      !e.target.classList.contains('active')
+      props.match.winner === "John" &&
+      !e.target.classList.contains("active")
     ) {
-      e.target.style.backgroundColor = '#dce9af';
-      e.target.style.color = '#000';
+      e.target.style.backgroundColor = "#dce9af";
+      e.target.style.color = "#000";
     } else if (
-      props.match.winner === 'Phil' &&
-      !e.target.classList.contains('active')
+      props.match.winner === "Phil" &&
+      !e.target.classList.contains("active")
     ) {
-      e.target.style.backgroundColor = '#FFBCB8';
-      e.target.style.color = '#000';
+      e.target.style.backgroundColor = "#FFBCB8";
+      e.target.style.color = "#000";
     } else if (
-      props.match.winner === '' &&
-      !e.target.classList.contains('active')
+      props.match.winner === "" &&
+      !e.target.classList.contains("active")
     ) {
-      e.target.style.backgroundColor = '#e6e6e6';
-      e.target.style.color = '#000';
+      e.target.style.backgroundColor = "#e6e6e6";
+      e.target.style.color = "#000";
     }
   };
 
@@ -128,19 +139,26 @@ export const Match = props => {
       >
         {matchDate} - {matchNumber}. zápas
         <span className="winning-side">
-          {winner === 'John' ? (
+          {winner === "John" ? (
             <span>
-              <span>{` vyhrává ${winner}`}</span>{' '}
+              <span>{` vyhrává ${winner}`}</span>{" "}
               <span className="result">{`${vyhraJohn}`}</span>
             </span>
-          ) : winner === 'Phil' ? (
+          ) : winner === "Phil" ? (
             <span>
-              <span>{` vyhrává ${winner}`}</span>{' '}
+              <span>{` vyhrává ${winner}`}</span>{" "}
               <span className="result">{`${vyhraPhil}`}</span>
+            </span>
+          ) : winner === "to be decided" ? (
+            <span className="to-be-decided">
+              <span>
+                {` se bude hrát na: `}
+                <span className="plannedMatch">{`${courtAndTime}`}</span>
+              </span>{" "}
             </span>
           ) : (
             <span>
-              <span>{` končí remízou`}</span>{' '}
+              <span>{` končí remízou`}</span>{" "}
               <span className="result">{`${vyhraJohn}`}</span>
             </span>
           )}
