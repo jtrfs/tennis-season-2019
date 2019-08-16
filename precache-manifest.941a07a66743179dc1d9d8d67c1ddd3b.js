@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "682b918325012d964e4a0c95efb5b7ec",
+    "revision": "feeda0c370f91e7f693f8cbeb9310319",
     "url": "/tennis-season-2019/index.html"
   },
   {
-    "revision": "9a24c1355837f7640bd9",
+    "revision": "90f46cf7383a406d4081",
     "url": "/tennis-season-2019/static/css/main.495f1103.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tennis-season-2019/static/js/2.65aa1cca.chunk.js"
   },
   {
-    "revision": "9a24c1355837f7640bd9",
-    "url": "/tennis-season-2019/static/js/main.b0ff29c2.chunk.js"
+    "revision": "90f46cf7383a406d4081",
+    "url": "/tennis-season-2019/static/js/main.b879db9a.chunk.js"
   },
   {
     "revision": "4dce857ce916fc6b2e81",
