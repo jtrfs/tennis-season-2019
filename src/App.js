@@ -177,6 +177,7 @@ class App extends Component {
         {
           id: 22,
           matchDate: new Date("2019-08-15"),
+          courtAndTime: "kurt K4 v 11:00",
           matchScore: [[3, 6], [3, 6], [3, 1]],
           winner: "Phil",
           notes:
@@ -185,7 +186,7 @@ class App extends Component {
         {
           id: 23,
           matchDate: new Date("2019-08-17"),
-          courtAndTime: 'kurt K3 v 9:30',
+          courtAndTime: "kurt K3 v 9:30",
           matchScore: [[0, 0], [0, 0], [0, 0]],
           winner: "to be decided",
           notes: "Johnny is the favourite, as always ..."
@@ -259,12 +260,23 @@ class App extends Component {
     });
     // console.log('mutualMatchScores - jak dopadl zapas: ', mutualMatchScores);
 
-    // vypocet poctu remiz
+    // vypocet poctu remiz - true or false
     const numOfDrawsArr = mutualMatchScores.filter(num => {
       let draws = num[0] === num[1];
+      console.log(draws);
       return draws;
     });
-    const numOfDraws = numOfDrawsArr.length;
+
+    // vypocet poctu zapasu bez toho planovaneho
+    const numOfMatchesReallyPlayed = matches.filter(match => {
+      return match.winner !== "to be decided";
+    });
+    console.log("pocet zapasu bez planovaneho: ", numOfMatchesReallyPlayed);
+
+    // remiza (cislo), ktera se nepocita - je to planovany zapas s provizornim vysledkem 0:0
+    const notDraw = matchesPlayed.length - numOfMatchesReallyPlayed.length;
+
+    const numOfDraws = numOfDrawsArr.length - notDraw;
     // console.log('pocet remiz: ', numOfDrawsArr);
 
     // spravny tvar slova remiza s cislicemi:
@@ -331,8 +343,8 @@ class App extends Component {
             </h1>
 
             <p className="rekapitulace">
-              Počet odehraných zápasů: <span>{matchesPlayed.length}</span>, z
-              toho{" "}
+              Počet odehraných zápasů:{" "}
+              <span>{numOfMatchesReallyPlayed.length}</span>, z toho{" "}
               <span>
                 {numOfDraws} {WordDeclination}
               </span>
