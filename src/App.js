@@ -140,7 +140,7 @@ class App extends Component {
           matchScore: [[2, 6], [0, 6], [6, 3]],
           winner: "Phil",
           notes:
-            "Tři zápasy v rychlém sledu tří dnů a výsledek pokaždé téměř shodný - Johnny opět prohrává a Filipovi roste náskok a hřebínek. Ale možná dojde konečně ke změně, jelikož si Johnny uvědomil, že nemůže hrát na body, musí hrát na techniku - co se učí, to musí umět prodat. Na kurt nepatří strach z chyb. Budeme-li parafrázovat velkého Andreho, tak jen ten, kdo trénuje, si zaslouží vyhrávat, a to je Johnny. Druhý set viděl právě avizovaný přerod v mentalitě Johnnyho, kdy se seznamoval s tímto novým přístupem, sice jasně prohrál, ale uvnitř věděl, že je to správná cesta. A to se potvrdilo ve třetím setu, kdy jasně dominoval. Bohužel s časových důvodů nebylo možné zápas dohrát, protože Phil spěchal na oběd do Lipníka. I tak se dá vyhrávat do tabulky."
+            "Tři zápasy v rychlém sledu tří dnů a výsledek pokaždé téměř shodný - Johnny opět prohrává a Filipovi roste náskok a hřebínek. Ale možná dojde konečně ke změně, jelikož si Johnny uvědomil, že nemůže hrát na body, musí hrát na techniku - co se učí, to musí umět prodat. Na kurt nepatří strach z chyb. Budeme-li parafrázovat velkého Andreho, tak jen ten, kdo trénuje, si zaslouží vyhrávat, a to je Johnny. Druhý set viděl právě avizovaný přerod v mentalitě Johnnyho, kdy se seznamoval s tímto novým přístupem, sice jasně prohrál, ale uvnitř věděl, že je to správná cesta. A to se potvrdilo ve třetím setu, kdy jasně dominoval. Bohužel z časových důvodů nebylo možné zápas dohrát, protože Phil spěchal na oběd do Lipníka. I tak se dá vyhrávat do tabulky."
         },
         {
           id: 18,
