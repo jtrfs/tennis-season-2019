@@ -190,17 +190,25 @@ class App extends Component {
           matchScore: [[5, 7], [3, 3]],
           winner: "Phil",
           notes: "Kluci se rozhodli, že hrát jen tenis jim nestačí a tak si po dvou měsících badmintonového půstu domluvili první badmintonové měření sil. Není třeba poskytovat zvědavé veřejnosti bližší údaje, ale můžeme prozradit, že si chlapci pěkně a vyrovnaně mákli a konstatovali, že jim to ještě celkem lítá. Po hodině na relativně čistém a rovném kurtu se vydali hrát 90 minut na červené oranici. Johnnny opět nastoupil s tím, že chce urvat výhru a málem se mu to povedlo. Vedl 5:3, ale prohrál 5:7, to se stalo v této sezóně už několikrát. Byl to ukrutně dlouhý set, který trval kolem jedné hodiny. Johnny moc dobře ví, že táhá za kratší konec, ale taky ví proč. Protivníkova taktika mu vůbec ale vůbec nehraje do karet. Způsob hry, ke kterému se Phil uchyluje by mnozí nazvali téměř jako podlý, protože míče tak akorát nadráží, odráží a vysokým obloukem vrací na zadní lajnu. Nemůžeme mu ale upřít s jakou přesností tento pinkálista hraje. Neomylně to padá Johnnymu do hřiště ze všemožných krkolomných pozic a to tak nešťastně (samozřejmě pod úhlem nějakých 78 až 85 stupňů), že ani velký Johnny není schopný to vrátit zpět. Ale jak už tu padlo asi několikrát: Tabulka je Tabulka a účel světí prostředky. Nakonec spláchli chlapci červenou antuku černou kofolou a v nedaleké restauraci to zajedli pizzou a ukončili lungem."
-        }
+        },
+        {
+          id: 24,
+          matchDate: new Date("2019-08-22"),
+          courtAndTime: "kurt K3 v 12:00",
+          matchScore: [[7, 5],[1, 6],[1, 4]],
+          winner: "Phil",
+          notes: 'Jedno velké "Ach jo" musím vyjádřit a u toho bych i zůstal, ale nezůstanu, jelikož se na kurtech tenisového klubu TJ Milo Olomouc dějí nekalosti. Ten zápas začal skvěle, Johnny vyhrál losování, což se stalo asi teprve podruhé tuto sezónu a vzápětí vyhrál, rovněž po dlouhé době, první set. Vše mělo být jasné. Johnny od teď bude jen a jen dominovat. Ne, nedominuje, možná kdyby si šel zahrát domino, tak by se mu dařilo lépe než dnes. Je pravdou že to trochu nevydržel psychicky, protože průhledně hrající Phil se opět uchýlil k taktice "údržbář" a Johnny to prostě neustál. Johnny trénuje čistotu úderů a ne "zaháněnou či odráženou nebo kdo to dá výš". S lítostí v srdci, ale s nadějí v duši, se loučí tenisové duo, Johnny a Phil, s tenisovou sezónou 2019 a všechny naše fanoušky zveme na závěrečné líté souboje u děravé sítě na kurtu K6 již tuto sobotu v 9:30. Kdo vyhraje, vyhrál celou Tabulku, viď, Phile?'
+        },
+        {
+          id: 25,
+          matchDate: new Date("2019-08-24"),
+          courtAndTime: "kurt K6 v 9:30",
+          matchScore: [[0, 0]],
+          winner: "to be decided",
+          notes: "Johnny is the favourite, as always ..."
+        },
         // {
-        //   id: 24,
-        //   matchDate: new Date("2019-08-18"),
-        //   courtAndTime: "kurt K3 v 9:30",
-        //   matchScore: [[0, 0]],
-        //   winner: "to be decided",
-        //   notes: "Johnny is the favourite, as always ..."
-        // },
-        // {
-        //   id: 25,
+        //   id: 26,
         //   matchDate: new Date("2019-08-17"),
         //   courtAndTime: "kurt K3 v 9:30",
         //   matchScore: [[0, 0]],
