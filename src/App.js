@@ -203,9 +203,9 @@ class App extends Component {
           id: 25,
           matchDate: new Date("2019-08-24"),
           courtAndTime: "kurt K6 v 9:30",
-          matchScore: [[0, 0]],
-          winner: "to be decided",
-          notes: "Johnny is the favourite, as always ..."
+          matchScore: [[0, 6], [7, 6], [6, 7]],
+          winner: "Phil",
+          notes: "V tomto týdnu, kdy vrcholí ostré až vyhrocené souboje nad tenisovou sítí v olomoucké mekce tenisu, na kurtech Mila Olomouc, tak ve stejnou dobu vrcholí zápasy mistrovství světa v badmintonu ve švýcarské Basileji. A my se ptáme, je to pouhá náhoda, a zárověň si dovolujeme opodstatněně odpovědět, že není a ani nemůže být. Prostě je to sport extra světové úrovně, tam i tady, na tom se shodují všichni zainteresovaní. Včera se odehrálo jedno z nejdelších utkání v badmintonové historii, které trvalo 2 hodiny a 6 minut, dnes se zápolení Johnnyho a Phila protáhlo podobně a ještě déle. Oba borci strávili v těžkých podmínkách pozdního léta, kdy vlhkost vzduchu dosahovala vlhkosti srovnatelné s vlhkostí britské komentátorky včerejšího vypjatého zápasu Chou vs. Wangcharoen, neskutečné 2 hodiny a 30 minut. První set můžeme opomenout, stav 0:6 byl pouhou anomálií tohoto dne. Je nutné uvést aspoň pod čarou, že Phil konečně opravdu hrál tenis. Dařilo se mu a měl opravdu navrch. Slušná práce, Phile, měl by ses ubírat touto cestou. Johnnymu se naopak nedařilo a byl tím vnitřně notně ovlivněn, ale pouze do druhého setu, kdy to teprve vše začalo. Opravdová bitva. Spousta energie, potu, nervů a dokonce i bolesti byla spotřebována a to zejména v okamžiku, kdy se Phil přetáhl raketou přes hlavu, tak neštastně a bolestivě, že mu naskočila pěkná boule v podobě menšího jelita. Zkrátka a dobře chlapci bojovali a Johnny opět bohužel neuspěl ve své snaze konečně po dlouhé době vyhrát, škoda, tentokrát to bylo blizoučko a i sám Phil tušil, že bude pokořen, ale ještě nanadešel čas vlady Johnnyho ... příští sezónu ... rok 2020 bude můj!"
         },
         // {
         //   id: 26,
