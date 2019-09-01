@@ -223,10 +223,10 @@ class App extends Component {
           id: 27,
           matchDate: new Date("2019-09-01"),
           courtAndTime: "kurt K1 v 11:00",
-          matchScore: [[0, 0]],
-          winner: "to be decided",
-          notes: "Johnny is the favourite, as always ..."
-        }
+          matchScore: [[6, 2], [6, 3],[6, 4]],
+          winner: "John",
+          notes: "A je to tady, přátelé, to, na co jsme všichni už tak dlouho netrpělivě čekali. Johnny vítězí a to takovým způsobem, že i ti největší nedůvěřivci museli uznat, že se vyplatí nejen se tvrdě lopotit u zdi, ale i investovat do trenéra a vybavení. Zbrusu nová raketa, Wilson Blade 98 Countervail umožnila Johnnymu rozdrtit Phila, který si stěžoval, tak jako vždycky na spoustu nepříznivých okolností, dnes nejvíce na přesné údery, které často končily na nevyzpytatelné čáře. Radujme se z této nádherné chvíle a přejme si, ať trvá co nejdéle. Sláva Johnnymu, sláva společnosti Wilson, která mu to umožnila."
+        },
         // {
         //   id: 26,
         //   matchDate: new Date("2019-08-17"),
